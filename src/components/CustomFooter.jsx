@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Button, Row, Col, Typography } from 'antd';
-import { InstagramOutlined, FacebookOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { InstagramOutlined, FacebookOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
 const { Title, Paragraph, Text } = Typography;
 
 const { Header, Footer } = Layout;
@@ -17,8 +17,11 @@ const CustomFooter = (props) => {
                     <Button type="primary" shape="circle" icon={<FacebookOutlined />} size={"large"} href="http://www.facebook.com/humanitylab/" />
                 </Col>
                 <Col className="gutter-row" span={2}>
-                    <Button type="primary" shape="circle" icon={<LinkedinOutlined />} size={"large"} href="www.linkedin.com/company/humanity-lab/" />
+                    <Button type="primary" shape="circle" icon={<LinkedinOutlined />} size={"large"} href="http://www.linkedin.com/company/humanity-lab/" />
                 </Col>
+                <Col className="gutter-row" span={2}>
+                    <Button type="primary" shape="circle" icon={<TwitterOutlined />} size={"large"} href="https://twitter.com/TheHumanityLab/" />
+                </Col>                
             </Row>
             <Row justify="center" justify="center">
                 <Col className="gutter-row" span={12}>
