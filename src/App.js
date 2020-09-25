@@ -1,27 +1,28 @@
-import React from 'react';
+import React, { Suspense, Fragment } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Navbar from './components/layouts/navbar.component';
-import HomePage from './components/pages/home-page.component';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
-import Footer from './components/layouts/footer.component';
+import "antd/dist/antd.css";
+import { Menu, Layout } from 'antd';
+import CustomNavbar from './components/CustomNavbar';
+import CustomFooter from './components/CustomFooter';
+import HomeScreen from './screens/HomeScreen';
+import './App.less';
+import Footer from './components/CustomFooter';
 
 function App() {
   return (
-    <div className="wrapper">
-
-      <BrowserRouter>
-        <Navbar />
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-        </Switch>
-        <Footer/>
-        <a href="#" className="back-top btn">
-            <i className="material-icons">keyboard_arrow_up</i>
-        </a>
-      </BrowserRouter>
-    </div>
+    <Suspense fallback={null}>
+      <Fragment>
+        <BrowserRouter>
+          <Layout style={{ minHeight: '100vh' }}>
+            <CustomNavbar />
+            <Switch>
+              <Route exact path='/' component={HomeScreen} />              
+            </Switch>
+            <CustomFooter />
+          </Layout>
+        </BrowserRouter>
+      </Fragment>
+    </Suspense>
   );
 }
 

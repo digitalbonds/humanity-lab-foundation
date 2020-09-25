@@ -1,0 +1,87 @@
+@import '~antd/dist/antd.less';
+
+@primary-color: #A04198;
+@menu-dark-bg: @primary-color;
+@layout-header-color: @primary-color;
+@layout-header-background: @primary-color;
+@component-background: @primary-color;
+@layout-header-background: @primary-color;
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.homeVector > div > svg {
+  width: 30%;
+}
+
+.bannerVector > div > svg {
+  width: 100%;
+}
+
+.banner {
+  color: #00BBB4;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {  
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-image-1 {
+  background-image: linear-gradient(to bottom, rgba(160, 66, 152, 1), rgba(160, 66, 152, 0.0));
+}
+
+.banner-text {  
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text-red-line {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-text-line-1 {  
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 20px;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.banner-text-line-2 {
+  color: #fff;
+  font-size: 90px;
+  font-style: oblique;
+}
+
+.gutter-row {
+  text-align: center;
+}
