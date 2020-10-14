@@ -26,7 +26,7 @@ const HomeScreen = (props) => {
                     <div className='banner-image banner-image-1'> 
                         <div className='banner-text'>
                             <ReactSVG src={ logo } className="bannerVector" alt="Humanity Lab Foundation" />
-                            <h3 className='banner-text-line-1'>The Humanity Lab is a disruptive empathy-driven movement at the intersection of public policy and people power.  We translate between outrage and institutional breakthrough.</h3>
+                            <h3 className='banner-text-line-1'>The Humanity Lab is a disruptive empathy-driven movement at the intersection of public policy and people power. <br/> We translate between outrage and institutional breakthrough.</h3>
                         </div>
                     </div>
                 </Carousel>
@@ -39,7 +39,7 @@ const HomeScreen = (props) => {
                 </Row>
                 <Row gutter={16} justify="center" style={{paddingBottom: '50px'}}>
                     <Col className="gutter-row" span={5}>
-                        <ReactSVG src={ icEngage } className="homeVector" alt="Engage"/>
+                    <ReactSVG src={ icInspire } className="homeVector" alt="Inspire" />
                         <div className="services-content">
                             <Title level={2}>Catalize Movement</Title>
                             <Paragraph>We create creative content that inspire thought-leadership, raise awareness and spark movement for impact.</Paragraph>
@@ -60,7 +60,7 @@ const HomeScreen = (props) => {
                         </div>
                     </Col>
                     <Col className="gutter-row" span={5}>
-                        <ReactSVG src={ icInspire } className="homeVector" alt="Inspire" />
+                        <ReactSVG src={ icEngage } className="homeVector" alt="Engage"/>
                         <div className="services-content">
                             <Title level={2}>Democratize Power</Title>
                             <Paragraph>Putting people at the center of decision making.</Paragraph>
@@ -95,7 +95,7 @@ const HomeScreen = (props) => {
                     </div>
                     <div className='banner-image banner-image-program-4'> 
                         <div className='banner-text'>                            
-                             <h1 className='banner-text-line-2'>Global People Summit</h1>
+                             <h1 className='banner-text-line-2'>Global People's Summit</h1>
                              <Button type="primary" href="https://www.globalpeoplesummit.org/">See more</Button>
                         </div>
                     </div>
